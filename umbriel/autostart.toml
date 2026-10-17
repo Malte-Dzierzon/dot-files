@@ -1,0 +1,9 @@
+# autostart — apps started at login. Add one quoted line per app.
+[general]
+autostart = [
+  "noctalia",
+  "walker --gapplication-service",
+  "wlsunset -l 52.5 -L 13.4",
+  "flatpak run org.openrgb.OpenRGB --startminimized",
+]
+show_cheatsheet = true

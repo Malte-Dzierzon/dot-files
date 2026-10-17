@@ -1,4 +1,0 @@
-BG26a-1.21.1-nf-1.2.1
-Server Modpack
-Server Modpack(build)
-instgroups.json

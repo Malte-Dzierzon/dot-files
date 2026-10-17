@@ -1,6 +1,0 @@
-#!/bin/sh
-# clipboard-sync — spiegelt PRIMARY (Maus-Markierung) nach CLIPBOARD (Strg+C/V).
-# Damit fügen Strg+V, Strg+Shift+V und Mittelklick immer dasselbe ein.
-# Nur Text, nur wenn nicht leer (verhindert Weglöschen beim Deselektieren).
-# Einweg-Sync, daher schleifenfrei. Start via Umbriel-Autostart (live config).
-exec wl-paste -t text --primary --watch sh -c 't=$(cat); [ -n "$t" ] && printf %s "$t" | wl-copy'

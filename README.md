@@ -9,8 +9,6 @@
 ![](https://img.shields.io/badge/Wayland-Umbriel%20compositor-16a3da?style=flat-square&logo=wayland&logoColor=ffffff&labelColor=070e15)
 ![](https://img.shields.io/badge/Noctalia-shell-0e0e43?style=flat-square&logoColor=ffffff&labelColor=070e15)
 [![](https://img.shields.io/badge/ghostty-1.3.1-3b4250?style=flat-square&labelColor=070e15)](https://github.com/ghostty-org/ghostty)
-[![](https://img.shields.io/badge/fish-4.8-89a4be?style=flat-square&logo=fish&logoColor=ffffff&labelColor=070e15)](https://fishshell.com)
-[![](https://img.shields.io/badge/zed-1.24-0e0e43?style=flat-square&labelColor=070e15)](https://zed.dev)
 
 </div>
 
@@ -27,84 +25,50 @@
 | Distro | openSUSE Tumbleweed |
 | Compositor | [Umbriel](https://github.com/noctalia-dev/umbriel) (Wayland) |
 | Shell | [Noctalia](https://github.com/noctalia-dev/noctalia) + Greeter |
-| Terminal | ghostty (primary), foot (fallback) |
+| Terminal | ghostty |
 | Shell prompt | fish + [Starship](https://starship.rs) |
 | Editor | Zed, Neovim (LazyVim) |
 | Browser | Zen |
-| Files | Nautilus |
-| App launcher | Walker |
+| File manager | Nautilus, Yazi |
 | Fonts | JetBrains Mono Nerd Font, Maple Mono |
 
 ## Configuration
 
-Configs live directly under `.config/`, mirroring their real locations in `~/`.
+Application configs sit directly in the repository root, mirroring `~/.config/`.
 Browse the structure or clone and copy selectively.
 
 <details>
 <summary><b>Desktop</b></summary>
 
-- `.config/umbriel/` — compositor config, keybindings, display settings, autostart, shaders
-- `.config/noctalia/` — shell, themes, plugins, templates
-- `.config/walker/` — app launcher configuration
-- `.config/gtk-3.0/` & `gtk-4.0/` — GTK settings and themes
-- `.config/qt5ct/` & `qt6ct/` — Qt color schemes
-- `.config/mpd/` & `rmpc/` — music daemon and TUI
-- `.config/kew/` — terminal music player
-- `.config/swaylock/` — screen locker
+- `umbriel/` — compositor config, keybindings, display settings, autostart, shaders
+- `noctalia/` — shell, themes, plugins, templates
+- `walker/` — app launcher configuration
+- `gtk-3.0/` & `gtk-4.0/` — GTK settings and themes
+- `qt5ct/` & `qt6ct/` — Qt color schemes
+- `swaylock/` — screen locker
 
 </details>
 
 <details>
 <summary><b>Shell</b></summary>
 
-- `.config/fish/` — config and shell functions
-- `.config/starship.toml` — prompt configuration
-- `.config/ghostty/` — terminal config, shaders, theme
-- `.config/foot/` — fallback terminal config
-- `.config/kitty/` & `alacritty/` — additional terminals
-- `.config/atuin/` — shell history
-- `.config/tmux/` — terminal multiplexer
-- `.config/btop/` — system monitor
-- `.config/cava/` — audio visualizer
-- `.config/fastfetch/` — system info
+- `fish/` — config and shell functions
+- `starship/` — prompt configuration
+- `ghostty/` — terminal config, shaders, theme
+- `atuin/` — shell history
+- `tmux/` — terminal multiplexer
 
 </details>
 
 <details>
 <summary><b>Development</b></summary>
 
-- `.config/nvim/` — Neovim with LazyVim
-- `.config/zed/` — Zed editor
-- `.config/yazi/` — file manager
-
-</details>
-
-<details>
-<summary><b>AI agents</b></summary>
-
-- `.config/omp/` — OpenCode plugin manager
-- `.config/opencode/` — OpenCode configuration
-- `.local/share/pi/agent/` — Pi coding agent
-
-</details>
-
-<details>
-<summary><b>Gaming & creative</b></summary>
-
-- `.config/OpenTabletDriver/` — tablet driver settings
-- `.local/share/PrismLauncher/` — Prism Minecraft launcher
-- `.config/blender/` — 3D viewport preferences
-- `.config/inkscape/` — vector editor preferences
-- `.config/godot/` — editor settings
-- `.config/krita/` — digital painting settings
-
-</details>
-
-<details>
-<summary><b>Local scripts</b></summary>
-
-- `.local/bin/default-app` — role-based application launcher (terminal, editor, browser, etc.)
-- `.local/bin/clipboard-sync` — mirrors PRIMARY selection to CLIPBOARD
+- `nvim/` — Neovim with LazyVim
+- `zed/` — Zed editor
+- `yazi/` — file manager
+- `opencode/` — OpenCode configuration
+- `omp/` — OpenCode plugin manager
+- `pi/` — Pi coding agent
 
 </details>
 
@@ -122,7 +86,3 @@ Browse the structure or clone and copy selectively.
 </div>
 
 View all wallpapers in [`assets/wallpapers/`](assets/wallpapers/).
-
----
-
-No installation scripts. These are plain configuration files synced to match a live openSUSE Tumbleweed setup.

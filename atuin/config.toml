@@ -1,0 +1,18 @@
+# Atuin: durchsuchbare Shell-History, lokal (kein Sync-Account).
+# (mirrors ~/.config/atuin/config.toml)
+# Sync bei Bedarf: `atuin register` + auto_sync auf true.
+# Diagnose 2026-10-16 (atuin 18.23.0, openSUSE Tumbleweed):
+# - Login-Shell war /bin/bash, seit 2026-10-16 /usr/bin/fish (`chsh` im Terminal erledigt).
+#   `atuin doctor` aus bash meldete daher name=omp/default=bash + fehlendes ATUIN_SESSION.
+#   Aus fish: name=fish, ATUIN_SESSION gesetzt, ctrl-r/up gebunden, history list/search OK.
+#   Stand: doctor meldet name=fish/default=fish, sqlite 3.46.0, keine Fehler.
+# - `doctor` flakt sporadisch mit "database schema is locked: main" (~40%), waehrend
+#   history list/search/status stabil Exit 0 liefern. history.db (98 importierte +
+#   laufende Eintraege, integrity ok, WAL-Checkpoint ok). Kein Eingriff noetig;
+#   nur Diagnose-Query von doctor betroffen, kein Datenverlust.
+style = "compact"
+enter_accept = true
+auto_sync = false
+
+[sync]
+records = true
