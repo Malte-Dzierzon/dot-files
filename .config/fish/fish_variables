@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export DOTNET_ROOT:/home/xealom/\x2edotnet
+SETUVAR fish_user_paths:/home/xealom/\x2edotnet

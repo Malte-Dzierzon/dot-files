@@ -1,0 +1,17 @@
+# Secrets, credentials, session data
+*.key
+*.pem
+auth.json
+sessions/
+node_modules/
+
+# Runtime state and caches
+.cache/
+.npm/
+result
+*~
+
+# Generated / backup files
+*.bak
+*.bak-*
+*~

@@ -1,0 +1,10 @@
+# Noctalia Discord theme for Equibop (Flatpak).
+# The community "discord" template only knows ~/.config/equibop, but the
+# Flatpak build uses ~/.var/app/org.equicord.equibop/config/equibop.
+# This user template reuses the cached Midnight variant as input, so upstream
+# fixes flow in automatically, and re-renders on every palette/mode change
+# with the live Noctalia colors (Haven custom palette, dark mode).
+
+[theme.templates.user.discord_equibop_flatpak]
+input_path = "$XDG_STATE_HOME/noctalia/community-templates/discord/discord-midnight.css"
+output_path = "~/.var/app/org.equicord.equibop/config/equibop/themes/noctalia.theme.css"
