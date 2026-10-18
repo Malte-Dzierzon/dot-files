@@ -36,7 +36,7 @@
 
 ## Configuration
 
-Application configs sit directly in the repository root, mirroring `~/.config/`.
+Application configs live in `Config/`, mirroring `~/.config/`.
 Browse the structure or clone and copy selectively.
 
 <details>
