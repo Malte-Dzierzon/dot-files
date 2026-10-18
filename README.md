@@ -15,7 +15,7 @@
 <div align="center">
 
 <img src="assets/screenshots/desktop.png" alt="Desktop screenshot" width="1200">
-
+<img src="assets/screenshots/desktop-gui.png" alt="Desktop-gui screenshot" width="1200">
 </div>
 
 ## Desktop stack
@@ -69,7 +69,6 @@ Browse the structure or clone and copy selectively.
 - `opencode/` — OpenCode configuration
 - `omp/` — OpenCode plugin manager
 - `pi/` — Pi coding agent
-
 </details>
 
 ## Wallpapers
@@ -78,11 +77,16 @@ Browse the structure or clone and copy selectively.
 
 <a href="assets/wallpapers/01-summer-cloud.png"><img src="assets/wallpapers/thumbnails/01-summer-cloud.webp" width="220" alt="01-summer-cloud"></a>
 <a href="assets/wallpapers/02-whale-abyss.jpg"><img src="assets/wallpapers/thumbnails/02-whale-abyss.webp" width="220" alt="02-whale-abyss"></a>
-<a href="assets/wallpapers/05-bedroom-anime.png"><img src="assets/wallpapers/thumbnails/05-bedroom-anime.webp" width="220" alt="05-bedroom-anime"></a>
-<a href="assets/wallpapers/07-stardust-peaks.png"><img src="assets/wallpapers/thumbnails/07-stardust-peaks.jpg" width="220" alt="07-stardust-peaks"></a>
-<a href="assets/wallpapers/11-storm-mage.png"><img src="assets/wallpapers/thumbnails/11-storm-mage.webp" width="220" alt="11-storm-mage"></a>
-<a href="assets/wallpapers/13-amber-gaze.png"><img src="assets/wallpapers/thumbnails/13-amber-gaze.webp" width="220" alt="13-amber-gaze"></a>
+<a href="assets/wallpapers/08-rain-study.jpg"><img src="assets/wallpapers/thumbnails/08-rain-study.webp" width="220" alt="08-rain-study"></a>
+<a href="assets/wallpapers/04-mountain-mirror.jpg"><img src="assets/wallpapers/thumbnails/04-mountain-mirror.webp" width="220" alt="04-mountain-mirror"></a>
+<a href="assets/wallpapers/10-neon-haven.jpg"><img src="assets/wallpapers/thumbnails/10-neon-haven.webp" width="220" alt="10-neon-haven"></a>
+<a href="assets/wallpapers/16-frosthold.jpg"><img src="assets/wallpapers/thumbnails/16-frosthold.webp" width="220" alt="16-frosthold"></a>
 
 </div>
 
 View all wallpapers in [`assets/wallpapers/`](assets/wallpapers/).
+
+
+<br>
+    
+<img src="assets/screenshots/SuseLogo.png" alt="openSUSE-Logo" width="1200">
