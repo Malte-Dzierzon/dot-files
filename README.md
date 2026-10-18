@@ -14,8 +14,10 @@
 
 <div align="center">
 
-<img src="assets/screenshots/desktop.png" alt="Desktop screenshot" width="1200">
-<img src="assets/screenshots/desktop-gui.png" alt="Desktop-gui screenshot" width="1200">
+<a href="assets/screenshots/desktop.png"><img src="assets/screenshots/thumbnails/desktop.webp" alt="Desktop screenshot" width="1200"></a>
+
+<a href="assets/screenshots/desktop-gui.png"><img src="assets/screenshots/thumbnails/desktop-gui.webp" alt="Desktop GUI screenshot" width="1200"></a>
+
 </div>
 
 ## Desktop stack
@@ -69,24 +71,36 @@ Browse the structure or clone and copy selectively.
 - `opencode/` — OpenCode configuration
 - `omp/` — OpenCode plugin manager
 - `pi/` — Pi coding agent
+
 </details>
 
-## Wallpapers
+<details>
+<summary><b>Wallpapers</b></summary>
 
 <div align="center">
 
 <a href="assets/wallpapers/01-summer-cloud.png"><img src="assets/wallpapers/thumbnails/01-summer-cloud.webp" width="220" alt="01-summer-cloud"></a>
 <a href="assets/wallpapers/02-whale-abyss.jpg"><img src="assets/wallpapers/thumbnails/02-whale-abyss.webp" width="220" alt="02-whale-abyss"></a>
-<a href="assets/wallpapers/08-rain-study.jpg"><img src="assets/wallpapers/thumbnails/08-rain-study.webp" width="220" alt="08-rain-study"></a>
 <a href="assets/wallpapers/04-mountain-mirror.jpg"><img src="assets/wallpapers/thumbnails/04-mountain-mirror.webp" width="220" alt="04-mountain-mirror"></a>
+<a href="assets/wallpapers/05-bedroom-anime.png"><img src="assets/wallpapers/thumbnails/05-bedroom-anime.webp" width="220" alt="05-bedroom-anime"></a>
+<a href="assets/wallpapers/06-cave-light.jpg"><img src="assets/wallpapers/thumbnails/06-cave-light.webp" width="220" alt="06-cave-light"></a>
+<a href="assets/wallpapers/07-stardust-peaks.png"><img src="assets/wallpapers/thumbnails/07-stardust-peaks.jpg" width="220" alt="07-stardust-peaks"></a>
+<a href="assets/wallpapers/08-rain-study.jpg"><img src="assets/wallpapers/thumbnails/08-rain-study.webp" width="220" alt="08-rain-study"></a>
+<a href="assets/wallpapers/09-sunflower-girl.jpg"><img src="assets/wallpapers/thumbnails/09-sunflower-girl.webp" width="220" alt="09-sunflower-girl"></a>
 <a href="assets/wallpapers/10-neon-haven.jpg"><img src="assets/wallpapers/thumbnails/10-neon-haven.webp" width="220" alt="10-neon-haven"></a>
+<a href="assets/wallpapers/11-storm-mage.png"><img src="assets/wallpapers/thumbnails/11-storm-mage.webp" width="220" alt="11-storm-mage"></a>
+<a href="assets/wallpapers/12-sky-leviathans.jpg"><img src="assets/wallpapers/thumbnails/12-sky-leviathans.webp" width="220" alt="12-sky-leviathans"></a>
+<a href="assets/wallpapers/13-amber-gaze.png"><img src="assets/wallpapers/thumbnails/13-amber-gaze.webp" width="220" alt="13-amber-gaze"></a>
+<a href="assets/wallpapers/14-tavern-treat.jpg"><img src="assets/wallpapers/thumbnails/14-tavern-treat.webp" width="220" alt="14-tavern-treat"></a>
+<a href="assets/wallpapers/15-meadow-path.jpg"><img src="assets/wallpapers/thumbnails/15-meadow-path.webp" width="220" alt="15-meadow-path"></a>
 <a href="assets/wallpapers/16-frosthold.jpg"><img src="assets/wallpapers/thumbnails/16-frosthold.webp" width="220" alt="16-frosthold"></a>
 
 </div>
 
 View all wallpapers in [`assets/wallpapers/`](assets/wallpapers/).
 
+</details>
 
 <br>
-    
+
 <img src="assets/screenshots/SuseLogo.png" alt="openSUSE-Logo" width="1200">
