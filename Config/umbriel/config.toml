@@ -4,7 +4,7 @@
 #   monitors.toml   display modes (machine-specific examples inside)
 #   input.toml      keyboard, mouse, touchpad
 #   look.toml       gaps, borders, blur, shadows
-#   bindings.toml   keybindings (apps launch directly via spawn:)
+#   bindings.toml   keybindings (apps launch via `default-app <role>`)
 [include]
 files = [
   "shaders/community/border/paper/effect.toml",

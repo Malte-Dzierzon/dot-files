@@ -6,4 +6,6 @@ autostart = [
   "wlsunset -l 52.5 -L 13.4",
   "flatpak run org.openrgb.OpenRGB --startminimized",
 ]
+# The polkit agent (polkit-kde-authentication-agent-1) autostarts via
+# /etc/xdg/autostart on openSUSE — nothing to add here.
 show_cheatsheet = true

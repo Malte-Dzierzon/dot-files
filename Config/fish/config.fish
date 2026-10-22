@@ -9,6 +9,7 @@ set -gx GIT_EDITOR "zeditor --wait"
 set -gx BROWSER zen
 set -gx TERMINAL ghostty
 fish_add_path -P $HOME/.local/bin
+set -gx DEFAULT_APP_CONF "$HOME/.config/default-app/roles.toml"
 
 # --- Starship Prompt ---
 if command -q starship
@@ -30,7 +31,7 @@ if command -q eza
 end
 
 # --- EZA_COLORS: plain ANSI names track the Noctalia-synced terminal palette ---
-# (ghostty + Noctalia templates set the actual hues; no hex duplication here)
+# (foot/kitty/Noctalia templates set the actual hues; no hex duplication here)
 set -gx EZA_COLORS "di=1;34:fi=0:ex=1;32:ln=1;36:or=1;31:ur=33:uw=31:ux=1;32:gr=33:gw=31:gx=1;32:tr=33:tw=31:tx=1;32:sn=32:sb=32:nb=2;32:xa=36:gm=33:ga=32:gd=31:gc=1;31:xx=2:da=2:in=2:bl=2:hd=2;4:hl=36"
 
 # --- zoxide (Jump, Binary bereits installiert) ---

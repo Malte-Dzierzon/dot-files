@@ -1,5 +1,5 @@
 # Atuin: durchsuchbare Shell-History, lokal (kein Sync-Account).
-# (mirrors ~/.config/atuin/config.toml)
+# (Config/atuin/config.toml → ~/.config/atuin/config.toml)
 # Sync bei Bedarf: `atuin register` + auto_sync auf true.
 # Diagnose 2026-10-16 (atuin 18.23.0, openSUSE Tumbleweed):
 # - Login-Shell war /bin/bash, seit 2026-10-16 /usr/bin/fish (`chsh` im Terminal erledigt).

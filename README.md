@@ -48,6 +48,7 @@ Browse the structure or clone and copy selectively.
 - `gtk-3.0/` & `gtk-4.0/` — GTK settings and themes
 - `qt5ct/` & `qt6ct/` — Qt color schemes
 - `swaylock/` — screen locker
+- `default-app/` — role dispatcher (`roles.toml` + `default-app` script: script → `~/.local/bin/`, roles → `~/.config/default-app/`)
 
 </details>
 

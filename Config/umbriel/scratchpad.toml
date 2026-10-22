@@ -7,7 +7,7 @@
 # `--class=` braucht GTK-ID-Format (Klasse mit Punkt), sonst `invalid class`.
 [[scratchpad]]
 name = "quake"
-spawn_when_empty = "ghostty -a dev.quake.Terminal"
+spawn_when_empty = "default-app terminal -a dev.quake.Terminal"
 
 [[window_rule]]
 match.app_id = "^dev[.]quake[.]Terminal$"

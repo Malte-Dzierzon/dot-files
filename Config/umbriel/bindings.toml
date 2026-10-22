@@ -1,24 +1,31 @@
-# bindings — keybindings for core applications.
-# Validate: umbriel config validate
+# bindings — keybindings. App shortcuts launch via `default-app <role>`,
+# so changing a role in config/defaults.toml updates every key at once.
+# Validate: umbriel config validate (after dot apply)
 
 [keybinds]
-# --- Apps ---
-"Mod+Return" = { action = "spawn:ghostty", repeat = false }
-"Mod+Alt+Return" = 'spawn:ghostty -e bash -c "tmux attach || tmux new -s Work"'
+# --- Apps (via default-app dispatcher; roles in config/defaults.toml) ---
+"Mod+Return" = { action = "spawn:default-app terminal", repeat = false }
+"Mod+Alt+Return" = 'spawn:default-app terminal bash -c "tmux attach || tmux new -s Work"'
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Mod+D" = "spawn:noctalia msg panel-toggle launcher"
-"Mod+E" = "spawn:zeditor"
-"Mod+Shift+Return" = "spawn:zen"
-"Mod+Shift+B" = "spawn:zen"
-"Mod+Shift+F" = "spawn:nautilus --new-window"
-"Mod+Shift+A" = "spawn:ghostty -e yazi"
-"Mod+Shift+Z" = "spawn:ghostty -e nvim"
-"Mod+Ctrl+T" = "spawn:ghostty -e btop"
-"Mod+N" = "spawn:ghostty -e bash -c 'sudoedit ~/.config/umbriel/input.toml'"
+"Mod+E" = "spawn:default-app editor"
+"Mod+Shift+Return" = "spawn:default-app browser"
+"Mod+Shift+B" = "spawn:default-app browser"
+"Mod+Shift+F" = "spawn:default-app file --new-window"
+"Mod+Shift+A" = "spawn:default-app terminal yazi"
+"Mod+Shift+O" = "spawn:default-app notes"
+"Mod+Shift+X" = "spawn:osu!"
+"Mod+Shift+Z" = "spawn:default-app terminal nvim"
+"Mod+A" = "spawn:default-app terminal -a tui-omp -T omp omp"
+  "Mod+N" = "spawn:default-app terminal bash -c 'sudoedit ~/.config/umbriel/input.toml'"
+"Mod+Shift+Alt+B" = "spawn:default-app browser --private-window"
+"Mod+Shift+D" = "spawn:default-app terminal lazydocker || default-app terminal docker ps"
+"Mod+Ctrl+T" = "spawn:default-app terminal btop"
+"Mod+Alt+M" = "spawn:default-app terminal cliamp"
 "Mod+Ctrl+Space" = "spawn:noctalia msg panel-toggle wallpaper"
 "Mod+Ctrl+Shift+Space" = "spawn:noctalia msg panel-toggle theblackdon/theme-switcher:carousel"
 "Mod+Alt+Space" = "spawn:noctalia msg panel-toggle control-center home"
-  "Mod+X" = "spawn:noctalia msg panel-toggle wallpaper"
+  "Mod+X" = "spawn:noctalia msg panel-toggle ashur-d/wallpaper-widget:hub"
   "Mod+Shift+Space" = "spawn:noctalia msg bar-toggle"
   "Alt+Space" = "scratchpad-toggle:quake"
   "Alt+Shift+Space" = { action = "window-move-to-scratchpad:quake", repeat = false }
@@ -102,3 +109,4 @@
 "XF86AudioNext" = 'spawn:sh -c "playerctl next"'
 "XF86MonBrightnessUp" = 'spawn:brightnessctl --class=backlight set +10%'
 "XF86MonBrightnessDown" = 'spawn:brightnessctl --class=backlight set 10%-'
+
