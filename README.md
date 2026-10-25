@@ -67,11 +67,11 @@ Browse the structure or clone and copy selectively.
 <summary><b>Development</b></summary>
 
 - `nvim/` — Neovim with LazyVim
-- `zed/` — Zed editor
+- `zed/` —  IDE
 - `yazi/` — file manager
-- `opencode/` — OpenCode configuration
-- `omp/` — OpenCode plugin manager
-- `pi/` — Pi coding agent
+- `opencode/` — OpenCode agent harness
+- `omp/` — Oh my Pi agent harness
+- `pi/` — Pi coding agent harness
 
 </details>
 
