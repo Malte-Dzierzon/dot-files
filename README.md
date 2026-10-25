@@ -104,4 +104,4 @@ View all wallpapers in [`assets/wallpapers/`](assets/wallpapers/).
 
 <br>
 
-<img src="assets/screenshots/SuseLogo.png" alt="openSUSE-Logo" width="1200">
+
