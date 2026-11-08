@@ -10,15 +10,13 @@
 ![](https://img.shields.io/badge/Noctalia-shell-0e0e43?style=flat-square&logoColor=ffffff&labelColor=070e15)
 [![](https://img.shields.io/badge/ghostty-1.3.1-3b4250?style=flat-square&labelColor=070e15)](https://github.com/ghostty-org/ghostty)
 
-</div>
-
-<div align="center">
-
 <a href="assets/screenshots/desktop.png"><img src="assets/screenshots/thumbnails/desktop.webp" alt="Desktop screenshot" width="1200"></a>
 
 <a href="assets/screenshots/desktop-gui.png"><img src="assets/screenshots/thumbnails/desktop-gui.webp" alt="Desktop GUI screenshot" width="1200"></a>
 
 </div>
+
+---
 
 ## Desktop stack
 
@@ -34,40 +32,56 @@
 | File manager | Nautilus, Yazi |
 | Fonts | JetBrains Mono Nerd Font, Maple Mono |
 
-## Configuration
+---
 
-Application configs live in `Config/`, mirroring `~/.config/`.
-Browse the structure or clone and copy selectively.
+## Quick start
+
+`Config/` mirrors `~/.config/` — copy selectively, don't blindly overwrite:
+
+```bash
+git clone https://github.com/Malte-Dzierzon/dotfile-opensuse.git dotfiles
+cp -r dotfiles/Config/fish ~/.config/fish
+```
+
+Two special cases:
+
+- `default-app`: copy the `default-app` script to `~/.local/bin/`, `roles.toml` to `~/.config/default-app/`
+- `ghostty`: needs fonts + cursor shaders — see [setup notes](Config/ghostty/README.md)
+
+---
+
+## Configuration
 
 <details>
 <summary><b>Desktop</b></summary>
 
-- `umbriel/` — compositor config, keybindings, display settings, autostart, shaders
+- `umbriel/` — compositor, keybindings, displays, autostart, shaders
 - `noctalia/` — shell, themes, plugins, templates
-- `walker/` — app launcher configuration
+- `walker/` — app launcher
 - `gtk-3.0/` & `gtk-4.0/` — GTK settings and themes
 - `qt5ct/` & `qt6ct/` — Qt color schemes
 - `swaylock/` — screen locker
-- `default-app/` — role dispatcher (`roles.toml` + `default-app` script: script → `~/.local/bin/`, roles → `~/.config/default-app/`)
+- `default-app/` — role dispatcher (`roles.toml` + `default-app` script)
+- `mimeapps.list` — desktop file associations
 
 </details>
 
 <details>
 <summary><b>Shell</b></summary>
 
-- `fish/` — config and shell functions
-- `starship/` — prompt configuration
-- `ghostty/` — terminal config, shaders, theme
+- `fish/` — config and functions
+- `starship/` — prompt
+- `ghostty/` — terminal, shaders, theme
 - `atuin/` — shell history
-- `tmux/` — terminal multiplexer
+- `tmux/` — multiplexer
 
 </details>
 
 <details>
 <summary><b>Development</b></summary>
 
-- `nvim/` — Neovim with LazyVim
-- `zed/` —  IDE
+- `nvim/` — Neovim (LazyVim)
+- `zed/` — IDE
 - `yazi/` — file manager
 - `opencode/` — OpenCode agent harness
 - `omp/` — Oh my Pi agent harness
@@ -75,8 +89,12 @@ Browse the structure or clone and copy selectively.
 
 </details>
 
+---
+
+## Wallpapers
+
 <details>
-<summary><b>Wallpapers</b></summary>
+<summary><b>Gallery</b> (15 wallpapers, click for full size)</summary>
 
 <div align="center">
 
@@ -98,10 +116,4 @@ Browse the structure or clone and copy selectively.
 
 </div>
 
-View all wallpapers in [`assets/wallpapers/`](assets/wallpapers/).
-
 </details>
-
-<br>
-
-
