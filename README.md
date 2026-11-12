@@ -97,25 +97,6 @@ Two special cases:
 </details>
 
 <details>
-<summary><b>Apps</b></summary>
-
-- `inkscape/` — preferences + UI CSS (extensions stay local)
-- `krita/` — `kritarc` + display config
-- `readest/` — settings + window state
-- `mangayomi/` — window geometry (library DB in `~/Documents/Mangayomi` stays local)
-- `effectcraft/` — shortcuts, window, workspace layouts
-- `photocraft/` — UI layout (`preferences.json` has machine paths, stays local)
-- `artcraft-launcher/` — launcher window state
-- `equibop/` — settings + Noctalia theme (from Flatpak config; caches stay local)
-- `prismlauncher/` — `prismlauncher.cfg`, instance list, theme (instances stay local)
-- VectorCraft / LightCraft / SoundCraft: installed, no versionable config found
-- Zen, Chromium, Obsidian, LM Studio: profiles/vaults are machine-local, no portable config
-- GNOME apps (Nautilus, Calculator, Baobab, System Monitor): dconf-managed, no files to version
-- T3Code (AppImage): Electron cache only, no portable config
-
-</details>
-
-<details>
 <summary><b>App-Liste</b></summary>
 
 Daily-use apps and where they come from (proprietary ones link to their site):
@@ -158,9 +139,7 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | omp | [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) |
 | pi | [earendil-works/pi](https://github.com/earendil-works/pi) |
 | btop | [aristocratos/btop](https://github.com/aristocratos/btop) |
-| cava | [karlstav/cava](https://github.com/karlstav/cava) |
 | fastfetch | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
-| kew | [ravachol/kew](https://github.com/ravachol/kew) |
 | mpd | [MusicPlayerDaemon/MPD](https://github.com/MusicPlayerDaemon/MPD) |
 | rmpc | [mierak/rmpc](https://github.com/mierak/rmpc) |
 | gh | [cli/cli](https://github.com/cli/cli) |
