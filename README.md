@@ -67,13 +67,21 @@ Two special cases:
 </details>
 
 <details>
-<summary><b>Shell</b></summary>
+<summary><b>Shell &amp; terminal</b></summary>
 
 - `fish/` — config and functions
-- `starship/` — prompt
+- `starship/` — prompt (`starship.toml` lives directly in `~/.config`)
 - `ghostty/` — terminal, shaders, theme
+- `foot/` — backup terminal
 - `atuin/` — shell history
-- `tmux/` — multiplexer
+- `btop/` — system monitor theme
+- `cava/` — visualizer
+- `fastfetch/` — system info (config + theme; logo PNGs stay local)
+- `kew/` — music player (`kewrc` + layouts)
+- `mpd/` & `rmpc/` — music daemon + client
+- `gh/` — GitHub CLI (no secrets; `hosts.yml` stays local)
+- `delta/` — diff theme
+- `yazi/` — file manager (+ flavors)
 
 </details>
 
@@ -82,10 +90,82 @@ Two special cases:
 
 - `nvim/` — Neovim (LazyVim)
 - `zed/` — IDE
-- `yazi/` — file manager
-- `opencode/` — OpenCode agent harness
+- `opencode/` — OpenCode agent harness (`service.json` stays local)
 - `omp/` — Oh my Pi agent harness
-- `pi/` — Pi coding agent harness
+- `pi/` — Pi coding agent harness (+ `oh-my-pi.jsonc`)
+
+</details>
+
+<details>
+<summary><b>Apps</b></summary>
+
+- `inkscape/` — preferences + UI CSS (extensions stay local)
+- `krita/` — `kritarc` + display config
+- `readest/` — settings + window state
+- `mangayomi/` — window geometry (library DB in `~/Documents/Mangayomi` stays local)
+- `effectcraft/` — shortcuts, window, workspace layouts
+- `photocraft/` — UI layout (`preferences.json` has machine paths, stays local)
+- `artcraft-launcher/` — launcher window state
+- `equibop/` — settings + Noctalia theme (from Flatpak config; caches stay local)
+- `prismlauncher/` — `prismlauncher.cfg`, instance list, theme (instances stay local)
+- VectorCraft / LightCraft / SoundCraft: installed, no versionable config found
+- Zen, Chromium, Obsidian, LM Studio: profiles/vaults are machine-local, no portable config
+- GNOME apps (Nautilus, Calculator, Baobab, System Monitor): dconf-managed, no files to version
+- T3Code (AppImage): Electron cache only, no portable config
+
+</details>
+
+<details>
+<summary><b>App-Liste</b></summary>
+
+Daily-use apps and where they come from (proprietary ones link to their site):
+
+| App | Repository |
+|---|---|
+| Prism Launcher | [PrismLauncher/PrismLauncher](https://github.com/PrismLauncher/PrismLauncher) |
+| LM Studio | [lmstudio.ai](https://lmstudio.ai) |
+| Nautilus (Files) | [GNOME/nautilus](https://gitlab.gnome.org/GNOME/nautilus) |
+| GNOME Calculator | [GNOME/gnome-calculator](https://gitlab.gnome.org/GNOME/gnome-calculator) |
+| Baobab (Disk Usage) | [GNOME/baobab](https://gitlab.gnome.org/GNOME/baobab) |
+| GNOME System Monitor | [GNOME/gnome-system-monitor](https://gitlab.gnome.org/GNOME/gnome-system-monitor) |
+| Inkscape | [inkscape/inkscape](https://gitlab.com/inkscape/inkscape) |
+| Readest | [readest/readest](https://github.com/readest/readest) |
+| Zed | [zed-industries/zed](https://github.com/zed-industries/zed) |
+| Ghostty | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) |
+| Foot | [dnkl/foot](https://codeberg.org/dnkl/foot) |
+| Chromium | [chromium/chromium](https://github.com/chromium/chromium) |
+| Obsidian | [obsidian.md](https://obsidian.md) |
+| Mangayomi | [kodjodevf/mangayomi](https://github.com/kodjodevf/mangayomi) |
+| Zen Browser | [zen-browser/desktop](https://github.com/zen-browser/desktop) |
+| ArtCraft Launcher | [storytold/craft-launcher](https://github.com/storytold/craft-launcher) |
+| EffectCraft | [storytold/effectcraft](https://github.com/storytold/effectcraft) |
+| PhotoCraft | [storytold/photocraft](https://github.com/storytold/photocraft) |
+| VectorCraft | [storytold/vectorcraft](https://github.com/storytold/vectorcraft) |
+| LightCraft | [storytold/lightcraft](https://github.com/storytold/lightcraft) |
+| SoundCraft | [storytold/soundcraft](https://github.com/storytold/soundcraft) |
+| Equibop | [Equicord/equibop](https://github.com/Equicord/equibop) |
+| Krita | [graphics/krita](https://invent.kde.org/graphics/krita) |
+| T3Code | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) |
+| Umbriel | [noctalia-dev/umbriel](https://github.com/noctalia-dev/umbriel) |
+| Noctalia | [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia) |
+| Walker | [abenz1267/walker](https://github.com/abenz1267/walker) |
+| Fish | [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell) |
+| Starship | [starship/starship](https://github.com/starship/starship) |
+| Atuin | [atuinsh/atuin](https://github.com/atuinsh/atuin) |
+| Yazi | [sxyazi/yazi](https://github.com/sxyazi/yazi) |
+| Neovim (LazyVim) | [LazyVim/LazyVim](https://github.com/LazyVim/LazyVim) |
+| OpenCode | [sst/opencode](https://github.com/sst/opencode) |
+| omp | [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) |
+| pi | [earendil-works/pi](https://github.com/earendil-works/pi) |
+| btop | [aristocratos/btop](https://github.com/aristocratos/btop) |
+| cava | [karlstav/cava](https://github.com/karlstav/cava) |
+| fastfetch | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
+| kew | [ravachol/kew](https://github.com/ravachol/kew) |
+| mpd | [MusicPlayerDaemon/MPD](https://github.com/MusicPlayerDaemon/MPD) |
+| rmpc | [mierak/rmpc](https://github.com/mierak/rmpc) |
+| gh | [cli/cli](https://github.com/cli/cli) |
+| delta | [dandavison/delta](https://github.com/dandavison/delta) |
+| swaylock | [swaywm/swaylock](https://github.com/swaywm/swaylock) |
 
 </details>
 

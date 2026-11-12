@@ -1,8 +1,12 @@
 # input — keyboard, mouse, touchpad.
 [input.keyboard]
-# Layout intentionally empty: Umbriel uses the system default
-# (services.xserver.xkb.layout from the NixOS config).
-# https://docs.noctalia.dev/umbriel/input — "empty uses the system default"
+# US-Intl mit AltGr-Dead-Keys. Anführungszeichen tippt direkt ",
+# Umlaute via AltGr+Shift+" dann Buchstabe (ä/ö/ü/Ä/Ö/Ü/ß).
+# Menü-Taste zusätzlich als Compose-Key.
+layout = "us"
+variant = "altgr-intl"
+options = "terminate:ctrl_alt_bksp,compose:menu"
+model = "pc105"
 repeat_rate = 40
 repeat_delay = 250
 numlock_toggle = true
@@ -17,6 +21,10 @@ natural_scroll = true
 click_method = "clickfinger"
 scroll_factor = 0.4
 disable_while_typing = true
+
+[input.tablet]
+enabled = true
+map_to_output = "DP-1"
 
 [input.cursor]
 theme = "Adwaita"

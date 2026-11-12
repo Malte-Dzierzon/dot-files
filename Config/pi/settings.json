@@ -1,7 +1,25 @@
 {
   "theme": "noctalia",
-  "lastChangelogVersion": "0.75.4",
+  "lastChangelogVersion": "1.5.0",
   "packages": [
-    "npm:oh-my-pi"
-  ]
+    "npm:oh-my-pi",
+    "npm:pi-run-stats",
+    "npm:pi-condense"
+  ],
+  "tuiMode": "fullscreen",
+  "terminal": {
+    "showTerminalProgress": true
+  },
+  "quietStartup": true,
+  "collapseChangelog": true,
+  "defaultProvider": "local",
+  "defaultModel": "lokal9b",
+  "defaultProjectTrust": "always",
+  "enableInstallTelemetry": false,
+  "markdown": {
+    "mermaid": "streaming"
+  },
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:pi-condense\",\"scope\":\"user\"}": "2.13.1"
+  }
 }

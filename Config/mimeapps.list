@@ -21,6 +21,8 @@ application/x-shellscript=dev.zed.Zed.desktop
 image/jpeg=imv.desktop
 image/png=imv.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
+x-scheme-handler/sc=kittytune-sc.desktop
+x-scheme-handler/t3code=com.t3tools.T3Code.desktop
 
 [Added Associations]
 x-scheme-handler/http=zen.desktop;
@@ -29,3 +31,4 @@ x-scheme-handler/chrome=zen.desktop;
 image/jpeg=imv.desktop;
 image/png=imv.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
+video/mp4=firefox.desktop;

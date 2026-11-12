@@ -1,0 +1,15 @@
+{
+  // Globaler Stil fuer alle oh-my-pi-Agenten: keine Emojis.
+  // (Ein Key je Agent — Wildcards werden nicht unterstuetzt.)
+  "agents": {
+    "oracle": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "explore": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "librarian": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "sisyphus": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "artistry": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "deep": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "quick": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "ultrabrain": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." },
+    "writing": { "systemPromptAppend": "Communication style: never use emojis anywhere (chat, code, commits, docs). No exceptions. For status markers use plain ASCII or Nerd Font glyphs (e.g. ● ○ ◆ ▶ ✓ ✗) where the terminal supports them, otherwise plain text. Never emoji." }
+  }
+}

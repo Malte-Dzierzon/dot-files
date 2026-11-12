@@ -16,6 +16,14 @@
 "Mod+Shift+O" = "spawn:default-app notes"
 "Mod+Shift+X" = "spawn:osu!"
 "Mod+Shift+Z" = "spawn:default-app terminal nvim"
+# --- Orbit Star-Ring Launcher (standalone ~/.local/share/orbit-launcher) ---
+# Mod+A stays the omp agent launcher (untouched); Orbit uses free keys.
+"Mod+Z" = { action = "spawn:orbit-launcher", repeat = false }
+# Tap Super alone -> toggle Orbit closed when open (Umbriel swallows
+# bound-chord releases, so press-release of the trigger keys never reaches
+# the client; a lone-Mod tap runs after release and closes a lingering
+# menu via the single-instance toggle).
+"Mod" = { action = "spawn:orbit-launcher --toggle-close", repeat = false }
 "Mod+A" = "spawn:default-app terminal -a tui-omp -T omp omp"
   "Mod+N" = "spawn:default-app terminal bash -c 'sudoedit ~/.config/umbriel/input.toml'"
 "Mod+Shift+Alt+B" = "spawn:default-app browser --private-window"
@@ -25,8 +33,9 @@
 "Mod+Ctrl+Space" = "spawn:noctalia msg panel-toggle wallpaper"
 "Mod+Ctrl+Shift+Space" = "spawn:noctalia msg panel-toggle theblackdon/theme-switcher:carousel"
 "Mod+Alt+Space" = "spawn:noctalia msg panel-toggle control-center home"
-  "Mod+X" = "spawn:noctalia msg panel-toggle ashur-d/wallpaper-widget:hub"
+  "Mod+X" = "spawn:noctalia msg panel-toggle wallpaper"
   "Mod+Shift+Space" = "spawn:noctalia msg bar-toggle"
+"Mod+Shift+S" = { action = "spawn:/home/xealom/.local/bin/hyprwhspr record toggle", repeat = false }
   "Alt+Space" = "scratchpad-toggle:quake"
   "Alt+Shift+Space" = { action = "window-move-to-scratchpad:quake", repeat = false }
   "Mod+Grave" = "scratchpad-toggle:quake"
@@ -62,7 +71,6 @@
 "Mod+Shift+Up" = "window-move-up"
   "Mod+Shift+Down" = "window-move-down"
   "Mod+O" = { action = "overview-toggle", repeat = false }
-  "Mod+Shift+T" = "workspace-set-layout:toggle"
   "Mod+F1" = "cheatsheet-toggle"
 
 # --- Workspaces 1-9 ---
@@ -97,6 +105,7 @@
   "Mod+Ctrl+S" = { action = "spawn:mkdir -p ~/Pictures/Screenshots && grim ~/Pictures/Screenshots/$(date +%F-%H%M%S).png", repeat = false }
   "Print" = { action = "spawn:mkdir -p ~/Pictures/Screenshots && grim ~/Pictures/Screenshots/$(date +%F-%H%M%S).png", repeat = false }
   "Shift+Print" = { action = 'spawn:mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +%F-%H%M%S).png', repeat = false }
+  "Mod+S" = { action = 'spawn:mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +%F-%H%M%S).png', repeat = false }
 
 # --- Media keys (volume, player, brightness) ---
 "XF86AudioRaiseVolume" = 'spawn:noctalia msg volume-up'

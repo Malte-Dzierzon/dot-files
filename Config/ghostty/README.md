@@ -19,11 +19,7 @@ Ziel: `~/.config/ghostty/` = `config` + `themes/noctalia` (beide hier versionier
    Aktiv ist `shaders/ghostty/cursor_trail_kitty_physics.glsl` (Port von Kittys
    Trail-Physik). Alternativen im selben Repo: `cursor_warp.glsl` (Schweif),
    `smooth_cursor_movement.glsl` (echtes Gleiten). Nur EIN Trail-Shader gleichzeitig.
-   (`shaders/ghostty/` ist der `ghostty/`-Subset dieses Clones — 1:1 übernommen,
-   damit das Repo eigenständig bleibt; `kitty/` + LICENSE/README bewusst nicht versioniert.)
-2. Fonts: JetBrainsMono NFM + Maple Mono aus `~/.local/share/fonts` (fc-cache).
-   Kein separates Font-Manifest im Repo.
+2. Fonts: siehe `../desktop/fonts/installed-fonts.txt` (Maple Mono + fc-cache).
 3. Als Standard setzen: `default-app --set terminal ghostty`
-   (`default-app` übersetzt Foot-Flags `-a`/`-T` automatisch; Script + `roles.toml`
-   liegen unter `Config/default-app/`, Script nach `~/.local/bin/` kopieren).
+   (`default-app` übersetzt Foot-Flags `-a`/`-T` automatisch).
 4. Prüfen: `ghostty +validate-config` (muss still sein), dann Ghostty neu laden.
