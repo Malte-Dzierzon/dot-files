@@ -14,6 +14,10 @@
 "Mod+Shift+F" = "spawn:default-app file --new-window"
 "Mod+Shift+A" = "spawn:default-app terminal yazi"
 "Mod+Shift+O" = "spawn:default-app notes"
+# Freed 2026-11: Mod+Shift+D now opens Resources (RAM/CPU overview).
+"Mod+Shift+D" = { action = "spawn:resources", repeat = false }
+# Go-to music player (phone + PC). Mod+M: free, bottom row next to Mod.
+"Mod+M" = { action = "spawn:kittytune", repeat = false }
 "Mod+Shift+X" = "spawn:osu!"
 "Mod+Shift+Z" = "spawn:default-app terminal nvim"
 # --- Orbit Star-Ring Launcher (standalone ~/.local/share/orbit-launcher) ---
