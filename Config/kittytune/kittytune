@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# KittyTune launcher wrapper.
+# _JAVA_AWT_WM_NONREPARENTING=1 works around a Java/XWayland bug where the app
+# ignores the tiling compositor's resizes: without it the Compose scene stays
+# frozen at its 1440x900 creation size (black area, white edge line, cut-off
+# corners) instead of filling the window. Verified on Umbriel/XWayland 2026-11.
+export _JAVA_AWT_WM_NONREPARENTING=1
+exec /opt/kitty-tune/bin/KittyTune "$@"

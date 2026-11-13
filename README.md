@@ -46,6 +46,7 @@ cp -r dotfiles/Config/fish ~/.config/fish
 Two special cases:
 
 - `default-app`: copy the `default-app` script to `~/.local/bin/`, `roles.toml` to `~/.config/default-app/`
+- `kittytune`: copy the `kittytune` script to `~/.local/bin/`, `kittytune.desktop` to `~/.local/share/applications/` (XWayland resize fix, see `Config/kittytune/README.md`)
 - `ghostty`: needs fonts + cursor shaders — see [setup notes](Config/ghostty/README.md)
 
 ---
@@ -62,6 +63,7 @@ Two special cases:
 - `qt5ct/` & `qt6ct/` — Qt color schemes
 - `swaylock/` — screen locker
 - `default-app/` — role dispatcher (`roles.toml` + `default-app` script)
+- `kittytune/` — launcher wrapper + desktop file (XWayland resize fix)
 - `mimeapps.list` — desktop file associations
 
 </details>
@@ -125,6 +127,7 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | LightCraft | [storytold/lightcraft](https://github.com/storytold/lightcraft) |
 | SoundCraft | [storytold/soundcraft](https://github.com/storytold/soundcraft) |
 | Equibop | [Equicord/equibop](https://github.com/Equicord/equibop) |
+| KittyTune | [alan7383/KittyTuneDesktop](https://github.com/alan7383/KittyTuneDesktop) |
 | Krita | [graphics/krita](https://invent.kde.org/graphics/krita) |
 | T3Code | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) |
 | Umbriel | [noctalia-dev/umbriel](https://github.com/noctalia-dev/umbriel) |
