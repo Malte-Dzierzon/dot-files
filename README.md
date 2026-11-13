@@ -110,23 +110,20 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | Nautilus (Files) | [GNOME/nautilus](https://gitlab.gnome.org/GNOME/nautilus) |
 | GNOME Calculator | [GNOME/gnome-calculator](https://gitlab.gnome.org/GNOME/gnome-calculator) |
 | Baobab (Disk Usage) | [GNOME/baobab](https://gitlab.gnome.org/GNOME/baobab) |
+| OpenRGB | [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) |
 | GNOME System Monitor | [GNOME/gnome-system-monitor](https://gitlab.gnome.org/GNOME/gnome-system-monitor) |
+| Resources | [nokyan/resources](https://github.com/nokyan/resources) |
 | Inkscape | [inkscape/inkscape](https://gitlab.com/inkscape/inkscape) |
 | Readest | [readest/readest](https://github.com/readest/readest) |
 | Zed | [zed-industries/zed](https://github.com/zed-industries/zed) |
 | Ghostty | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) |
-| Foot | [dnkl/foot](https://codeberg.org/dnkl/foot) |
 | Chromium | [chromium/chromium](https://github.com/chromium/chromium) |
 | Obsidian | [obsidian.md](https://obsidian.md) |
 | Mangayomi | [kodjodevf/mangayomi](https://github.com/kodjodevf/mangayomi) |
 | Zen Browser | [zen-browser/desktop](https://github.com/zen-browser/desktop) |
 | ArtCraft Launcher | [storytold/craft-launcher](https://github.com/storytold/craft-launcher) |
-| EffectCraft | [storytold/effectcraft](https://github.com/storytold/effectcraft) |
-| PhotoCraft | [storytold/photocraft](https://github.com/storytold/photocraft) |
-| VectorCraft | [storytold/vectorcraft](https://github.com/storytold/vectorcraft) |
-| LightCraft | [storytold/lightcraft](https://github.com/storytold/lightcraft) |
-| SoundCraft | [storytold/soundcraft](https://github.com/storytold/soundcraft) |
 | Equibop | [Equicord/equibop](https://github.com/Equicord/equibop) |
+| osu! | [osu.ppy.sh](https://osu.ppy.sh) |
 | KittyTune | [alan7383/KittyTuneDesktop](https://github.com/alan7383/KittyTuneDesktop) |
 | Krita | [graphics/krita](https://invent.kde.org/graphics/krita) |
 | T3Code | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) |
