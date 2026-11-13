@@ -1,8 +1,20 @@
 #!/usr/bin/env bash
 # KittyTune launcher wrapper.
-# _JAVA_AWT_WM_NONREPARENTING=1 works around a Java/XWayland bug where the app
-# ignores the tiling compositor's resizes: without it the Compose scene stays
-# frozen at its 1440x900 creation size (black area, white edge line, cut-off
-# corners) instead of filling the window. Verified on Umbriel/XWayland 2026-11.
+#
+# 1. _JAVA_AWT_WM_NONREPARENTING=1 works around a Java/XWayland bug where the app
+#    ignores the tiling compositor's resizes: without it the Compose scene stays
+#    frozen at its 1440x900 creation size (black area, white edge line, cut-off
+#    corners) instead of filling the window. Verified on Umbriel/XWayland 2026-11.
+#
+# 2. The systemd scope (app-kittytune-<pid>.scope) makes system monitors that
+#    group processes by cgroup (e.g. GNOME Resources, Mission Center) show
+#    KittyTune as a proper app instead of a stray process: launched plainly from
+#    a launcher/panel, the process would otherwise inherit "no app" from its
+#    reaped parent and never match any .desktop file. The name pattern matters:
+#    Resources extracts the desktop ID from app.slice/app-<id>[-<pid>].scope.
+#    (--quiet keeps terminal launches clean; --collect drops the scope on exit.
+#    Single-instance forwarding still works: a second launch gets its own scope,
+#    passes files/args on, and exits.)
+set -euo pipefail
 export _JAVA_AWT_WM_NONREPARENTING=1
-exec /opt/kitty-tune/bin/KittyTune "$@"
+exec systemd-run --user --quiet --collect --scope --unit="app-kittytune-$$.scope" /opt/kitty-tune/bin/KittyTune "$@"
