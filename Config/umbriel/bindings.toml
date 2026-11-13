@@ -25,19 +25,12 @@
 # menu via the single-instance toggle).
 "Mod" = { action = "spawn:orbit-launcher --toggle-close", repeat = false }
 "Mod+A" = "spawn:default-app terminal -a tui-omp -T omp omp"
-  "Mod+N" = "spawn:default-app terminal bash -c 'sudoedit ~/.config/umbriel/input.toml'"
 "Mod+Shift+Alt+B" = "spawn:default-app browser --private-window"
-"Mod+Shift+D" = "spawn:default-app terminal lazydocker || default-app terminal docker ps"
 "Mod+Ctrl+T" = "spawn:default-app terminal btop"
-"Mod+Alt+M" = "spawn:default-app terminal cliamp"
-"Mod+Ctrl+Space" = "spawn:noctalia msg panel-toggle wallpaper"
-"Mod+Ctrl+Shift+Space" = "spawn:noctalia msg panel-toggle theblackdon/theme-switcher:carousel"
 "Mod+Alt+Space" = "spawn:noctalia msg panel-toggle control-center home"
   "Mod+X" = "spawn:noctalia msg panel-toggle wallpaper"
   "Mod+Shift+Space" = "spawn:noctalia msg bar-toggle"
 "Mod+Shift+S" = { action = "spawn:/home/xealom/.local/bin/hyprwhspr record toggle", repeat = false }
-  "Alt+Space" = "scratchpad-toggle:quake"
-  "Alt+Shift+Space" = { action = "window-move-to-scratchpad:quake", repeat = false }
   "Mod+Grave" = "scratchpad-toggle:quake"
   "Mod+Shift+Q" = { action = "spawn:flatpak run org.equicord.equibop", repeat = false }
   "Alt+Tab" = "spawn:noctalia msg window-switcher"
@@ -71,6 +64,11 @@
 "Mod+Shift+Up" = "window-move-up"
   "Mod+Shift+Down" = "window-move-down"
   "Mod+O" = { action = "overview-toggle", repeat = false }
+# Side mouse button (Logitech "back") + Mod: overview without taking the
+# right hand off the mouse. Plain mouse buttons can't be bound (bad chord),
+# and the Mod chord keeps games safe: binds are off while a client inhibits
+# input (allow_when_inhibited defaults to false).
+"Mod+MouseBack" = { action = "overview-toggle", repeat = false }
   "Mod+F1" = "cheatsheet-toggle"
 
 # --- Workspaces 1-9 ---
