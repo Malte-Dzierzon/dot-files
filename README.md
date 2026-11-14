@@ -233,7 +233,7 @@ I use it for the connection to my phone and generally for VPN and virtual networ
 
 </details>
 
-**Did you build this with AI?**
+**Did I build this with AI?**
 <details>
 <summary>Answer</summary>
 
