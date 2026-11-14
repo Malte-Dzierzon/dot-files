@@ -232,3 +232,11 @@ Some apps in my stack are only available as Flatpaks, so mixing is simply necess
 I use it for the connection to my phone and generally for VPN and virtual network stuff. It just works without any port-forwarding hassle.
 
 </details>
+
+**Did you build this with AI?**
+<details>
+<summary>Answer</summary>
+
+Yes, AI helped build this, and it shows in the stack. You don't need it though — everything runs fine without any agent. Still, I'd recommend using one these days; this is no anti-AI setup. Just don't adopt things blindly, know what you're running.
+
+</details>
