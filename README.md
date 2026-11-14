@@ -185,16 +185,11 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 
 ## Q&A — why is the setup like this?
 
-> Personal decisions — one question each, answers expandable. Drafts, rephrase as needed.
-
 **Why Umbriel as compositor?**
 <details>
 <summary>Answer</summary>
 
-Pro: Wayland, tuned for Noctalia, one config folder with clear separation
-(`bindings`, `look`, `monitors`, `autostart`) and `umbriel --check` as quick
-verify. Con: young project, small community, sparse docs — upstream repo and
-`rebuild-umbriel` are mandatory.
+It's a good mix of Hyprland and Niri that gives me features from both worlds. The integration with the Noctalia shell is excellent, the overview over everything that's open is genuinely useful, and overall it just feels complete and feature-rich without being bloated.
 
 </details>
 
@@ -202,19 +197,7 @@ verify. Con: young project, small community, sparse docs — upstream repo and
 <details>
 <summary>Answer</summary>
 
-Pro: bar, launcher, control-center and templates from one source
-(`noctalia msg templates-apply` rolls out Ghostty/Zed/opencode/pi at once).
-Con: template upkeep on app updates, floating rule in `look.toml` required.
-
-</details>
-
-**Why no display manager (tty1 login)?**
-<details>
-<summary>Answer</summary>
-
-Pro: no GDM/greetd overhead, single entry point (`tty1-umbriel.fish` →
-`start-umbriel`), autostart lives with Umbriel. Con: no graphical login,
-multi-user is manual work.
+It's a fast, minimal and clean shell that doesn't dictate too much but also doesn't leave me with too little. Since the v5 rewrite it has become really good, I don't have to configure everything by hand, and the plugin system covers the rest.
 
 </details>
 
@@ -222,9 +205,7 @@ multi-user is manual work.
 <details>
 <summary>Answer</summary>
 
-Pro: fish for interactive defaults (autosuggestions, `conf.d` snippets like
-`sys-update`, `rebuild-*`), Starship for a portable prompt. Con: two config
-locations (`fish/` + `starship.toml` directly in `~/.config`).
+Fish gives me autosuggestions and just feels like a fast, pleasant shell to work in every day. Starship on top keeps the prompt consistent wherever I am.
 
 </details>
 
@@ -232,10 +213,7 @@ locations (`fish/` + `starship.toml` directly in `~/.config`).
 <details>
 <summary>Answer</summary>
 
-Pro: six roles (`terminal editor browser file pdf notes`) in `roles.toml`;
-~12 keybinds, scratchpad and `env.toml` follow automatically. Con: one extra
-layer — `default-app --list` and the `mimeapps.list` cross-check are part of
-verify.
+It's pure quality of life: when I switch an app I change one role instead of re-hardcoding every keybind. One place to edit, everything else follows.
 
 </details>
 
@@ -243,10 +221,7 @@ verify.
 <details>
 <summary>Answer</summary>
 
-Pro: base from distro packages (stable, one `zypper dup`), desktop apps as
-Flatpaks (current, isolated), Umbriel/Noctalia/Walker from source into
-`~/.local/bin`. Con: three update paths (`sys-update` vs. `flatpak update`
-vs. `rebuild-*`).
+Some apps in my stack are only available as Flatpaks, so mixing is simply necessary. Flatpaks can start a bit slower, but honestly I don't care — my system is fast enough that it doesn't matter.
 
 </details>
 
@@ -254,7 +229,6 @@ vs. `rebuild-*`).
 <details>
 <summary>Answer</summary>
 
-Pro: one tailnet for PC + phone, no port forwarding. Con: DNS warning with
-NetworkManager — check `tailscale status` first before forcing anything.
+I use it for the connection to my phone and generally for VPN and virtual network stuff. It just works without any port-forwarding hassle.
 
 </details>
