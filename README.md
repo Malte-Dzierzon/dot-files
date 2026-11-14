@@ -24,7 +24,7 @@
 |---|---|
 | Distro | openSUSE Tumbleweed |
 | Compositor | [Umbriel](https://github.com/noctalia-dev/umbriel) (Wayland) |
-| Shell | [Noctalia](https://github.com/noctalia-dev/noctalia) + Greeter |
+| Shell | [Noctalia](https://github.com/noctalia-dev/noctalia) |
 | Terminal | ghostty |
 | Shell prompt | fish + [Starship](https://starship.rs) |
 | Editor | Zed, Neovim (LazyVim) |
@@ -36,18 +36,17 @@
 
 ## Quick start
 
-`Config/` mirrors `~/.config/` — copy selectively, don't blindly overwrite:
+`Config/` is sorted by app, not a 1:1 mirror of `~/.config/` — copy selectively, don't blindly overwrite:
 
 ```bash
 git clone https://github.com/Malte-Dzierzon/dotfile-opensuse.git dotfiles
 cp -r dotfiles/Config/fish ~/.config/fish
 ```
 
-Two special cases:
+Full install guides live in [`Setup/`](Setup/README.md):
 
-- `default-app`: copy the `default-app` script to `~/.local/bin/`, `roles.toml` to `~/.config/default-app/`
-- `kittytune`: copy the `kittytune` script to `~/.local/bin/`, `kittytune.desktop` to `~/.local/share/applications/` (XWayland resize fix, see `Config/kittytune/README.md`)
-- `ghostty`: needs fonts + cursor shaders — see [setup notes](Config/ghostty/README.md)
+- [Setup — manual install](Setup/README.md) — fresh PC or laptop, by hand
+- [Setup — agent install](Setup/AGENT.md) — hand this to an AI agent
 
 ---
 

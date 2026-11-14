@@ -1,6 +1,6 @@
 # bindings — keybindings. App shortcuts launch via `default-app <role>`,
-# so changing a role in config/defaults.toml updates every key at once.
-# Validate: umbriel config validate (after dot apply)
+# so changing a role in roles.toml updates every key at once.
+# Validate: umbriel --check
 
 [keybinds]
 # --- Apps (via default-app dispatcher; roles in config/defaults.toml) ---
