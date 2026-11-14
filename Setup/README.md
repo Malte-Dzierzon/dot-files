@@ -72,6 +72,7 @@ Flatpak / reverse-DNS apps (readest, mangayomi, prismlauncher, artcraft-launcher
 - `Config/default-app/roles.toml` — check the six roles (`terminal editor browser file pdf notes`); change with `default-app --set <role> <binary>`. Still required: `bindings.toml` and `scratchpad.toml` call `default-app <role>`, never a hardcoded binary.
 - `Config/mimeapps.list` → `~/.config/mimeapps.list` — file/URL associations (zen, zed, nautilus, zathura). Separate from `roles.toml` on purpose: roles drive keybinds, mimeapps drives `xdg-open`.
 - Secrets stay local, never commit: `gh` (`hosts.yml`), `opencode` (`service.json`), logo PNGs, login/cache dirs.
+- Music daemon is a user service, not in autostart: `systemctl --user enable --now mpd` (rmpc needs it on `127.0.0.1:6600`).
 
 ## Keybinds
 

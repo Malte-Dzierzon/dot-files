@@ -77,7 +77,7 @@ Full install guides live in [`Setup/`](Setup/README.md):
 - `atuin/` — shell history
 - `btop/` — system monitor theme
 - `cava/` — visualizer
-- `fastfetch/` — system info (config + theme; logo PNGs stay local)
+- `fastfetch/` — system info (config + theme + SusePic logo)
 - `kew/` — music player (`kewrc` + layouts)
 - `mpd/` & `rmpc/` — music daemon + client
 - `gh/` — GitHub CLI (no secrets; `hosts.yml` stays local)
@@ -116,6 +116,7 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | Readest | [readest/readest](https://github.com/readest/readest) |
 | Zed | [zed-industries/zed](https://github.com/zed-industries/zed) |
 | Ghostty | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) |
+| Foot | [dnkl/foot](https://codeberg.org/dnkl/foot) |
 | Chromium | [chromium/chromium](https://github.com/chromium/chromium) |
 | Obsidian | [obsidian.md](https://obsidian.md) |
 | Mangayomi | [kodjodevf/mangayomi](https://github.com/kodjodevf/mangayomi) |
@@ -125,6 +126,8 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | osu! | [osu.ppy.sh](https://osu.ppy.sh) |
 | KittyTune | [alan7383/KittyTuneDesktop](https://github.com/alan7383/KittyTuneDesktop) |
 | Krita | [graphics/krita](https://invent.kde.org/graphics/krita) |
+| EffectCraft | [storytold/effectcraft](https://github.com/storytold/effectcraft) |
+| PhotoCraft | [storytold/photocraft](https://github.com/storytold/photocraft) |
 | T3Code | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) |
 | Umbriel | [noctalia-dev/umbriel](https://github.com/noctalia-dev/umbriel) |
 | Noctalia | [noctalia-dev/noctalia](https://github.com/noctalia-dev/noctalia) |
@@ -138,9 +141,11 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | omp | [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) |
 | pi | [earendil-works/pi](https://github.com/earendil-works/pi) |
 | btop | [aristocratos/btop](https://github.com/aristocratos/btop) |
+| Cava | [karlstav/cava](https://github.com/karlstav/cava) |
 | fastfetch | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | mpd | [MusicPlayerDaemon/MPD](https://github.com/MusicPlayerDaemon/MPD) |
 | rmpc | [mierak/rmpc](https://github.com/mierak/rmpc) |
+| kew | [ravachol/kew](https://github.com/ravachol/kew) |
 | gh | [cli/cli](https://github.com/cli/cli) |
 | delta | [dandavison/delta](https://github.com/dandavison/delta) |
 | swaylock | [swaywm/swaylock](https://github.com/swaywm/swaylock) |
