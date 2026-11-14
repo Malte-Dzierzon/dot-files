@@ -110,7 +110,6 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | GNOME Calculator | [GNOME/gnome-calculator](https://gitlab.gnome.org/GNOME/gnome-calculator) |
 | Baobab (Disk Usage) | [GNOME/baobab](https://gitlab.gnome.org/GNOME/baobab) |
 | OpenRGB | [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) |
-| GNOME System Monitor | [GNOME/gnome-system-monitor](https://gitlab.gnome.org/GNOME/gnome-system-monitor) |
 | Resources | [nokyan/resources](https://github.com/nokyan/resources) |
 | Inkscape | [inkscape/inkscape](https://gitlab.com/inkscape/inkscape) |
 | Readest | [readest/readest](https://github.com/readest/readest) |
@@ -149,6 +148,7 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 | gh | [cli/cli](https://github.com/cli/cli) |
 | delta | [dandavison/delta](https://github.com/dandavison/delta) |
 | swaylock | [swaywm/swaylock](https://github.com/swaywm/swaylock) |
+| Tailscale | [tailscale/tailscale](https://github.com/tailscale/tailscale) |
 
 </details>
 
@@ -178,5 +178,83 @@ Daily-use apps and where they come from (proprietary ones link to their site):
 <a href="assets/wallpapers/16-frosthold.jpg"><img src="assets/wallpapers/thumbnails/16-frosthold.webp" width="220" alt="16-frosthold"></a>
 
 </div>
+
+</details>
+
+---
+
+## Q&A — why is the setup like this?
+
+> Personal decisions — one question each, answers expandable. Drafts, rephrase as needed.
+
+**Why Umbriel as compositor?**
+<details>
+<summary>Answer</summary>
+
+Pro: Wayland, tuned for Noctalia, one config folder with clear separation
+(`bindings`, `look`, `monitors`, `autostart`) and `umbriel --check` as quick
+verify. Con: young project, small community, sparse docs — upstream repo and
+`rebuild-umbriel` are mandatory.
+
+</details>
+
+**Why Noctalia as shell?**
+<details>
+<summary>Answer</summary>
+
+Pro: bar, launcher, control-center and templates from one source
+(`noctalia msg templates-apply` rolls out Ghostty/Zed/opencode/pi at once).
+Con: template upkeep on app updates, floating rule in `look.toml` required.
+
+</details>
+
+**Why no display manager (tty1 login)?**
+<details>
+<summary>Answer</summary>
+
+Pro: no GDM/greetd overhead, single entry point (`tty1-umbriel.fish` →
+`start-umbriel`), autostart lives with Umbriel. Con: no graphical login,
+multi-user is manual work.
+
+</details>
+
+**Why fish + Starship?**
+<details>
+<summary>Answer</summary>
+
+Pro: fish for interactive defaults (autosuggestions, `conf.d` snippets like
+`sys-update`, `rebuild-*`), Starship for a portable prompt. Con: two config
+locations (`fish/` + `starship.toml` directly in `~/.config`).
+
+</details>
+
+**Why `default-app` instead of hardcoded binaries?**
+<details>
+<summary>Answer</summary>
+
+Pro: six roles (`terminal editor browser file pdf notes`) in `roles.toml`;
+~12 keybinds, scratchpad and `env.toml` follow automatically. Con: one extra
+layer — `default-app --list` and the `mimeapps.list` cross-check are part of
+verify.
+
+</details>
+
+**Why mixed zypper + Flatpak?**
+<details>
+<summary>Answer</summary>
+
+Pro: base from distro packages (stable, one `zypper dup`), desktop apps as
+Flatpaks (current, isolated), Umbriel/Noctalia/Walker from source into
+`~/.local/bin`. Con: three update paths (`sys-update` vs. `flatpak update`
+vs. `rebuild-*`).
+
+</details>
+
+**Why Tailscale?**
+<details>
+<summary>Answer</summary>
+
+Pro: one tailnet for PC + phone, no port forwarding. Con: DNS warning with
+NetworkManager — check `tailscale status` first before forcing anything.
 
 </details>

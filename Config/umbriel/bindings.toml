@@ -20,14 +20,7 @@
 "Mod+M" = { action = "spawn:kittytune", repeat = false }
 "Mod+Shift+X" = "spawn:osu!"
 "Mod+Shift+Z" = "spawn:default-app terminal nvim"
-# --- Orbit Star-Ring Launcher (standalone ~/.local/share/orbit-launcher) ---
-# Mod+A stays the omp agent launcher (untouched); Orbit uses free keys.
-"Mod+Z" = { action = "spawn:orbit-launcher", repeat = false }
-# Tap Super alone -> toggle Orbit closed when open (Umbriel swallows
-# bound-chord releases, so press-release of the trigger keys never reaches
-# the client; a lone-Mod tap runs after release and closes a lingering
-# menu via the single-instance toggle).
-"Mod" = { action = "spawn:orbit-launcher --toggle-close", repeat = false }
+# Mod+Z / Mod-tap freed 2026-11 (Orbit radial launcher removed).
 "Mod+A" = "spawn:default-app terminal -a tui-omp -T omp omp"
 "Mod+Shift+Alt+B" = "spawn:default-app browser --private-window"
 "Mod+Ctrl+T" = "spawn:default-app terminal btop"
