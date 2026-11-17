@@ -47,6 +47,8 @@ Verified exceptions (don't guess these):
 
 | Repo path | Target |
 |---|---|
+| `Config/noctalia/settings.toml` | `~/.local/state/noctalia/settings.toml` (Shell-Settings, State — vorher Backup, Hotspot-Passwort bleibt lokal) |
+| `Config/noctalia/templates|palettes|plugins.json|equibop-discord.toml` | `~/.config/noctalia/` (nur diese vier, nie `settings.toml` dorthin) |
 | `Config/starship/starship.toml` | `~/.config/starship.toml` (file, not folder) |
 | `Config/pi/*` | `~/.pi/` + `~/.pi/agent/` (pi lives under home) |
 | `Config/mimeapps.list` | `~/.config/mimeapps.list` (file, not folder) |

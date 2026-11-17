@@ -49,11 +49,15 @@ For Umbriel/Noctalia rebuilds, the repo already documents the build path in `Con
 ```bash
 cp -r Config/fish ~/.config/fish
 cp -r Config/umbriel ~/.config/umbriel
-cp -r Config/noctalia ~/.config/noctalia
+# Noctalia ist zweigeteilt (Details: Config/noctalia/README.md):
+cp -r Config/noctalia/templates Config/noctalia/palettes Config/noctalia/plugins.json Config/noctalia/equibop-discord.toml ~/.config/noctalia/
+cp Config/noctalia/settings.toml ~/.local/state/noctalia/settings.toml  # vorher Backup!
 ```
 
 | Repo path | Target | Why different |
 |---|---|---|
+| `Config/noctalia/settings.toml` | `~/.local/state/noctalia/settings.toml` | Noctalia-Shell-Settings liegen im State, nicht in `~/.config` |
+| `Config/noctalia/templates|palettes|plugins.json|equibop-discord.toml` | `~/.config/noctalia/` | nur diese vier dorthin, nie `settings.toml` mitkopieren |
 | `Config/starship/starship.toml` | `~/.config/starship.toml` | file directly, not a folder |
 | `Config/pi/*` | `~/.pi/` + `~/.pi/agent/` | pi keeps config under home, not `~/.config` |
 | `Config/mimeapps.list` | `~/.config/mimeapps.list` | file directly, not a folder |

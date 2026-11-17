@@ -56,7 +56,7 @@ Full install guides live in [`Setup/`](Setup/README.md):
 <summary><b>Desktop</b></summary>
 
 - `umbriel/` — compositor, keybindings, displays, autostart, shaders
-- `noctalia/` — shell, themes, plugins, templates
+- `noctalia/` — shell (`settings.toml` → `~/.local/state/noctalia/`), eigene Templates/Palette/Plugins (`~/.config/noctalia/`), siehe `Config/noctalia/README.md`
 - `walker/` — app launcher
 - `gtk-3.0/` & `gtk-4.0/` — GTK settings and themes
 - `qt5ct/` & `qt6ct/` — Qt color schemes
